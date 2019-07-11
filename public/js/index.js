@@ -11,6 +11,7 @@ getColors()
       const link = document.createElement('a');
       const li = document.createElement('li');
       link.href = `color.html?name=${color.name}`;
+      link.classList.add(`${color.name}`);
       link.textContent = `${color.name}`;
       link.appendChild(li);
 

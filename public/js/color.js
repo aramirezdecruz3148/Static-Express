@@ -9,7 +9,8 @@ const name = search.get('name');
 
 getColorDetail(name)
   .then(color => {
-    h2.textContent = `${color.name}`;
+    h2.textContent = `${color.name}`.toUpperCase();
+    h2.classList.add(`${color.name}`);
     h3.textContent = `#${color.hex}, rgb(${color.r}, ${color.g}, ${color.b})`;
   });
   

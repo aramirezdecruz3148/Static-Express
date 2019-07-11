@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: -5vw;
+}
+
+h1 {
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-left: -5vw;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+a:hover {
+  transition: .3s;
+  font-size: 1.8em;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: rgb(211, 211, 4);
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
