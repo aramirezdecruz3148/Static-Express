@@ -7,6 +7,6 @@ export const getColors = () => {
 };
 
 export const getColorDetail = () => {
-  return fetch(`/api/v1/${name}`)
+  return fetch(`/api/v1/colors/${name}`)
     .then(res => res.json());
 };
