@@ -4,13 +4,17 @@ const mainContent = document.getElementById('root');
 
 const colorsList = document.createElement('ul');
 
+
 getColors()
   .then(colors => {
     colors.forEach(color => {
+      const link = document.createElement('a');
       const li = document.createElement('li');
-      li.textContent = `${color.name}`;
+      link.href = 'color.html';
+      link.textContent = `${color.name}`;
+      link.appendChild(li);
 
-      colorsList.appendChild(li);
+      colorsList.appendChild(link);
     });
   });
 
