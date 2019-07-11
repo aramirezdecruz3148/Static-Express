@@ -9,4 +9,12 @@ describe('color api tests', () => {
         expect(res.text).toEqual(expect.stringContaining('Colors'));
       });
   });
+
+  it('requesting / path will return list of colors', () => {
+    return request(app)
+      .get('/color.html?name=orange')
+      .then(res => {
+        expect(res.text).toEqual(expect.stringContaining('Full Color List'));
+      });
+  });
 });
